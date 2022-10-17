@@ -57,6 +57,7 @@
             this.searchButton.TabIndex = 2;
             this.searchButton.Text = "Get Fruit Info";
             this.searchButton.UseVisualStyleBackColor = false;
+            this.searchButton.Click += new System.EventHandler(this.getSingleFruit);
             // 
             // Form1
             // 
