@@ -12,6 +12,17 @@ using RestSharp;
 using RestSharp.Deserializers;
 using RestSharp.Extensions;
 
+/*
+ TWITTER KEYS
+ API KEY: J17bpvbztFvU9frxqzdBGmfnB
+ API KEY: SECRET: ETKMJA5FJ1IxJfDLwqaUjvgBNQbwzTGghRrqepYtVnf0BXMcP7
+ BEARER TOKEN: AAAAAAAAAAAAAAAAAAAAAJ%2BFiQEAAAAA4k01wLZaeUeMuMOJSSXjjwndAgM%3D5F3xh6ZRrxsr1NrlbMT2DvhZl7buBhOxb1QYDB7bltrttBgKV2
+ ACCESS TOKEN: 1450437000507662343-LlSn4uFIajrvc3I6uhEsKxaqx8ZnuP
+ ACCESS TOKEN SECRET: GUlAp2KwsoquvDDLRAPM3oknEwaTmItB16SMz6uDMmaDe
+ APP ID: 25789855
+
+ */
+
 namespace Tadas_Gliadkovskis_CA1
 {
     public partial class Form1 : Form
@@ -50,7 +61,7 @@ namespace Tadas_Gliadkovskis_CA1
             var fruits = temp;
 
 //https://stackoverflow.com/questions/37649238/how-to-put-multiple-values-of-list-in-a-messagebox
-            foreach (Nutritions n in fruits.nutritions)
+            foreach (Fruit n in fruits.fruit)
             {
                 
                 MessageBox.Show(n.ToString(), "Fruit Nutritional Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -93,15 +104,11 @@ namespace Tadas_Gliadkovskis_CA1
             
         }
 
-        /*
+        
 
         public class Fruit
         {
-            public List<Info> info { get; set; }
-        }*/
 
-        public class RootObject
-        {
             public string genus { get; set; }
             public string name { get; set; }
             public string id { get; set; }
@@ -109,6 +116,21 @@ namespace Tadas_Gliadkovskis_CA1
             public string order { get; set; }
 
             public List<Nutritions> nutritions { get; set; }
+
+            public override string ToString()
+            {
+                StringBuilder ObjectString = new StringBuilder();
+                ObjectString.AppendLine("Genus: " + this.genus);
+
+                return ObjectString.ToString();
+            }
+            //public List<Info> info { get; set; }
+        }
+
+        public class RootObject
+        {
+            public List<Fruit> fruit { get; set; }
+
         }
 
         
