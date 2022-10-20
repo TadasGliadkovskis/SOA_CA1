@@ -14,6 +14,7 @@ using RestSharp.Deserializers;
 using RestSharp.Extensions;
 using Tweetinvi;
 using Tweetinvi.Core.Helpers;
+using Tweetinvi.Models;
 using Tweetinvi.Parameters;
 /*
 TWITTER KEYS
@@ -48,7 +49,13 @@ namespace Tadas_Gliadkovskis_CA1
         private async void getAllButton_Click(object sender, EventArgs e)
         {
 
-            retrieveUserName();
+            getTimeline();
+        }
+
+        private async void searchTweets()
+        {
+            var tweets = await client.Search.SearchTweetsAsync("hello");
+            MessageBox.Show("Tweets: " + tweets.ToString());
         }
 
         private async void retrieveUserName()
@@ -62,9 +69,16 @@ namespace Tadas_Gliadkovskis_CA1
             var tweet = await client.Tweets.GetTweetAsync(1583067836313837568);
         }
 
+        // This program will iterate over each tweet and extract the text from the user
         private async void getTimeline()
         {
-            var userTimeline = await client.Timelines.GetUserTimelineAsync("espn");
+            //var timelineIterator = client.Timelines.GetUserTimelineIterator("espn");
+            var userTimeline = await client.Timelines.GetUserTimelineAsync("d00229061T");
+
+            foreach (ITweet t in userTimeline)
+            {
+                MessageBox.Show("Tweet Text: "+t.Text);
+            }
         }
 
     }
