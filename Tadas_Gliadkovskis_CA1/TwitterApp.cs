@@ -78,6 +78,15 @@ namespace Tadas_Gliadkovskis_CA1
             client.Tweets.PublishTweetAsync(tweetContents);
             MessageBox.Show("Tweet Complete:", "Tweet Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        //Summary:
+        // Emulating the twitter tweet box check that there is text before trying to tweet
+        // will tweet to account "d00229061T"
+
+        private void updateCharacterCount(object sender, EventArgs e)
+        {
+            int charCount = 180 - publishTweetTextBox.Text.Length;
+            characterCount.Text = charCount.ToString();
+        }
 
         private async void retrieveUserName()
         {
@@ -91,10 +100,6 @@ namespace Tadas_Gliadkovskis_CA1
             MessageBox.Show("Example Tweet: "+tweet.ToString(), "Tweet Retrieved by ID", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void updateCharacterCount(object sender, EventArgs e)
-        {
-            int charCount = 180 - publishTweetTextBox.Text.Length;
-            characterCount.Text = charCount.ToString();
-        }
+        
     }
 }
