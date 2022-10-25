@@ -17,7 +17,7 @@ namespace Tadas_Gliadkovskis_CA1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new TwitterApp());
         }
     }
 }

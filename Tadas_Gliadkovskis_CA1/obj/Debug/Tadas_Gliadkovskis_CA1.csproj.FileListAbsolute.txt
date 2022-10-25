@@ -3,7 +3,6 @@ E:\Assignment 1\year 4\SOA_CA1\Tadas_Gliadkovskis_CA1\bin\Debug\Tadas_Gliadkovsk
 E:\Assignment 1\year 4\SOA_CA1\Tadas_Gliadkovskis_CA1\bin\Debug\Tadas_Gliadkovskis_CA1.pdb
 E:\Assignment 1\year 4\SOA_CA1\Tadas_Gliadkovskis_CA1\obj\Debug\Tadas_Gliadkovskis_CA1.csproj.AssemblyReference.cache
 E:\Assignment 1\year 4\SOA_CA1\Tadas_Gliadkovskis_CA1\obj\Debug\Tadas_Gliadkovskis_CA1.csproj.SuggestedBindingRedirects.cache
-E:\Assignment 1\year 4\SOA_CA1\Tadas_Gliadkovskis_CA1\obj\Debug\Tadas_Gliadkovskis_CA1.Form1.resources
 E:\Assignment 1\year 4\SOA_CA1\Tadas_Gliadkovskis_CA1\obj\Debug\Tadas_Gliadkovskis_CA1.csproj.GenerateResource.cache
 E:\Assignment 1\year 4\SOA_CA1\Tadas_Gliadkovskis_CA1\obj\Debug\Tadas_Gliadkovskis_CA1.csproj.CoreCompileInputs.cache
 E:\Assignment 1\year 4\SOA_CA1\Tadas_Gliadkovskis_CA1\obj\Debug\Tadas_Gliadkovskis_CA1.exe
@@ -51,3 +50,4 @@ E:\Assignment 1\year 4\SOA_CA1\Tadas_Gliadkovskis_CA1\bin\Debug\Tweetinvi.Creden
 E:\Assignment 1\year 4\SOA_CA1\Tadas_Gliadkovskis_CA1\bin\Debug\Tweetinvi.Logic.xml
 E:\Assignment 1\year 4\SOA_CA1\Tadas_Gliadkovskis_CA1\bin\Debug\Tweetinvi.Streams.xml
 E:\Assignment 1\year 4\SOA_CA1\Tadas_Gliadkovskis_CA1\bin\Debug\Tweetinvi.WebLogic.xml
+E:\Assignment 1\year 4\SOA_CA1\Tadas_Gliadkovskis_CA1\obj\Debug\Tadas_Gliadkovskis_CA1.TwitterApp.resources

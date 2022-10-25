@@ -63,19 +63,9 @@ namespace Tadas_Gliadkovskis_CA1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap dots_image {
+        internal static System.Drawing.Bitmap twitter_logo {
             get {
-                object obj = ResourceManager.GetObject("dots_image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap dots_image1 {
-            get {
-                object obj = ResourceManager.GetObject("dots_image1", resourceCulture);
+                object obj = ResourceManager.GetObject("twitter_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
